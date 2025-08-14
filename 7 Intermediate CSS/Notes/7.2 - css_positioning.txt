@@ -1,0 +1,73 @@
+CSS Positioning Explained
+
+CSS positioning determines how elements are placed on a webpage. There
+are five main position values:
+
+1. static (default)
+
+Behavior: Elements are placed in the normal document flow.
+When to use: Most elements by default.
+
+Example:
+
+position: static;
+
+2. relative
+
+Behavior: Positions element relative to its original position.
+You can use top, left, right, bottom to shift it without affecting
+surrounding elements’ flow.
+
+Example:
+
+position: relative; top: 10px; left: 20px;
+
+3. absolute
+
+Behavior: Positions element relative to the nearest positioned ancestor
+(anything with position other than static). Removed from the normal
+flow, so it can overlap other elements.
+
+Example:
+
+position: absolute; top: 0; right: 0;
+
+4. fixed
+
+Behavior: Positions element relative to the viewport (browser window).
+Stays in place even when scrolling.
+
+Example:
+
+position: fixed; bottom: 0; right: 0;
+
+5. sticky
+
+Behavior: Acts like relative until a certain scroll position is reached,
+then acts like fixed. Useful for sticky headers or menus.
+
+Example:
+
+position: sticky; top: 0;
+
+Positioning Summary Table
+
+  -----------------------------------------------------------------------
+  Position          Moves Relative To In Document Flow? Sticks on Scroll?
+  ----------------- ----------------- ----------------- -----------------
+  static            Normal flow       Yes               No
+
+  relative          Own original      Yes               No
+                    position                            
+
+  absolute          Nearest           No                No
+                    positioned                          
+                    ancestor                            
+
+  fixed             Viewport          No                Yes
+
+  sticky            Scroll position & Yes               Yes (after
+                    nearest                             trigger)
+                    scrollable                          
+                    ancestor                            
+  -----------------------------------------------------------------------

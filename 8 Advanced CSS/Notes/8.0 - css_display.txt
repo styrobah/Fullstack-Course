@@ -1,0 +1,77 @@
+CSS Display Explained
+
+The display property in CSS determines how an element is displayed in the document. It affects layout, box type, and whether an element generates a block or inline box.
+
+block
+
+The element starts on a new line and takes up the full width available.
+
+Common for <div>, <p>, <h1>–<h6>.
+Example:
+
+display: block;
+
+inline
+
+The element does not start on a new line and only takes up as much width as necessary.
+
+Common for <span>, <a>, <strong>.
+Example:
+
+display: inline;
+
+inline-block
+
+Like inline elements, but allows setting width and height.
+Example:
+
+display: inline-block;
+
+none
+
+The element is not displayed at all and is removed from the document flow.
+Example:
+
+display: none;
+
+flex
+
+Enables flexbox layout model for flexible, responsive designs.
+Example:
+
+display: flex;
+
+grid
+
+Enables grid layout model for two-dimensional layouts.
+Example:
+
+display: grid;
+
+inline-flex
+
+Like flex, but behaves like an inline element.
+Example:
+
+display: inline-flex;
+
+inline-grid
+
+Like grid, but behaves like an inline element.
+Example:
+
+display: inline-grid;
+
+table
+
+Behaves like a table element.
+Example:
+
+display: table;
+
+list-item
+
+Behaves like a list item, with a bullet or number.
+Example:
+
+display: list-item;

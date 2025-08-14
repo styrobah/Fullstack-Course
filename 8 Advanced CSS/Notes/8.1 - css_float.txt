@@ -1,0 +1,54 @@
+CSS Float Explained
+
+The float property in CSS is used to position an element to the left or right of its container, allowing text and inline elements to wrap around it.
+
+float: left
+
+Positions the element on the left side of its container.
+
+Other inline content flows on the right side.
+
+float: left;
+
+float: right
+
+Positions the element on the right side of its container.
+
+Other inline content flows on the left side.
+
+float: right;
+
+float: none (default)
+
+The element does not float; it remains in normal flow.
+
+float: none;
+
+float: inline-start / inline-end
+
+Positions relative to the writing mode of the document (useful for right-to-left languages).
+
+float: inline-start; /* start side of text flow */
+float: inline-end;   /* end side of text flow */
+
+Clearing Floats
+
+When using floats, following content can wrap around them unintentionally. To stop that, use the clear property.
+
+clear values:
+
+left — no content allowed on left side.
+
+right — no content allowed on right side.
+
+both — no content allowed on either side.
+
+clear: both;
+
+Common Use Cases
+
+Wrapping text around images.
+
+Creating basic multi-column layouts (older technique, replaced by flexbox/grid).
+
+Floating navigation menus.
