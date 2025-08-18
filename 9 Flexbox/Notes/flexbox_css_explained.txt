@@ -1,0 +1,72 @@
+CSS Flexbox (Flexible Box Layout)
+
+Flexbox is a CSS layout module that makes it easier to design flexible and responsive layouts.
+It arranges elements in rows or columns and distributes space automatically.
+
+---
+
+1. Enable Flexbox
+.container {
+  display: flex;   /* activates flexbox on the container */
+}
+
+---
+
+2. Main Axis vs Cross Axis
+- Main axis: direction in which flex items are placed (row by default).
+- Cross axis: perpendicular to the main axis.
+
+---
+
+3. Key Properties for Container
+- flex-direction: sets direction of items
+  - row (default), row-reverse, column, column-reverse
+- justify-content: alignment on the main axis
+  - flex-start, flex-end, center, space-between, space-around, space-evenly
+- align-items: alignment on the cross axis
+  - flex-start, flex-end, center, stretch, baseline
+- flex-wrap: control wrapping
+  - nowrap (default), wrap, wrap-reverse
+
+Example:
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+---
+
+4. Key Properties for Items
+- flex: shorthand for flex-grow flex-shrink flex-basis
+  Example: flex: 1; → item takes equal space
+- align-self: overrides align-items for one item
+- order: changes the visual order of items
+
+Example:
+.item {
+  flex: 1;          /* each item grows equally */
+  order: 2;         /* item appears later */
+  align-self: flex-end;
+}
+
+---
+
+5. Common Use Cases
+- Centering items (horizontally & vertically):
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+- Responsive navigation bars
+- Equal-height cards in a row
+- Flexible grids that adapt to screen sizes
+
+---
+
+👉 Flexbox = best for 1D layouts (rows or columns).
+👉 For full 2D page layouts, combine with CSS Grid.
